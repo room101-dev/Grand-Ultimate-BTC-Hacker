@@ -37,7 +37,9 @@ vanity-search
 
 This is the new stuff CUDA only. Note, compiling cuda is not easy, you need to know the -sm on your card, you need to be an expert; You break anything you fix it, nobody is going to help you 
 
-The code is hardwired for  the bloom-filter at at common home path, you'll need to modify the source so that the blf is found at run, but the message will be seen, and the mod is just easy C++.
+The code is hardwired for  the bloom-filter at at common home path, you'll need to modify the source so that the blf is found at run, but the message will be seen, and the mod is just easy C++. ( This is not production code, in production the blf is kept on its own NVME drive, so the path would be /media/Fast/Monster8.blf )
+
+I call 'monster' cuz long ago I had these monster bitcoin address files (h160)
 
 README.md
 
@@ -62,6 +64,11 @@ loop2.sh
 
 This is the automated script to continously run your miner's who control the gpu cards, I like to reset every 20minutes and use another address template, reset the private key scan every 100M keys is a good-idea, and use a random seed so the random number generator never runs the same.
 
+make-bin.sh
+
+This is an example of making the .bin file for the binchk ( in hex2blf ) this is the fast way to 100% ask is an H160 here or not, no file search required, don't use 'grep' for anything, if you must, use the perl binary2.pl, its pretty good. Note all these search engines require that you pre-sort your data, and make it unique, so "sort -uniq bigdata.hex > bigdata-uniq.hex", on a 500gb file, reduced to a 100GB file, is a major super-computer task, your system needs massive NVME drives and large 32+ GB ram for caching.
+
+Examples of how all this is used is in the loop2.sh file, where miner is called, and then results analyzed, an then repeated every 20 minutes in this example.
 
 ****The generic file folder map is 
 
