@@ -1,0 +1,138 @@
+oclengine.c:		if (vcp->vc_verbose > 1)
+oclengine.c:	if (vcp->vc_verbose > 1)
+oclengine.c:		if (vcp->vc_verbose > 1)
+oclengine.c:		if (vcp->vc_verbose > 1)
+oclengine.c:	if (vcp->vc_verbose > 0) {
+oclengine.c:		if ((vcp->vc_verbose > 0) && fromsource && !patched)
+oclengine.c:	} else if ((vcp->vc_verbose > 0) && fromsource && !patched) {
+oclengine.c:	    ((vcp->vc_verbose > 1) && fromsource && !patched)) {
+oclengine.c:				if (vcp->vc_verbose > 1)
+oclengine.c:	if (vcp->vc_verbose > 1)
+oclengine.c:	if ((vocp->voc_quirks & VG_OCL_BROKEN) && (vcp->vc_verbose > 0)) {
+oclengine.c:	if (vcp->vc_compressed)
+oclengine.c:	vg_test_func_t test_func = vcp->vc_test;
+oclengine.c:	vg_test_func_t test_func = vcp->vc_test;
+oclengine.c:		if (vcp->vc_verbose > 1)
+oclengine.c:	if (vcp->vc_verbose > 0)
+oclengine.c:		if (vcp->vc_verbose > 1) {
+oclengine.c:	if (!vcp->vc_remove_on_match &&
+oclengine.c:	    (vcp->vc_chance >= 1.0f) &&
+oclengine.c:	    (vcp->vc_chance < round) &&
+oclengine.c:	    (vcp->vc_verbose > 0)) {
+oclengine.c:	vxcp->vxc_binres[0] = vcp->vc_addrtype;
+oclengine.c:	pattern_generation = vcp->vc_pattern_generation;
+oclengine.c:	if (vcp->vc_pubkey_base) {
+oclengine.c:			     vcp->vc_pubkey_base,
+oclengine.c:			     vcp->vc_pattern_generation)) {
+oclengine.c:		if (vcp->vc_halt)
+oclengine.c:		if (vcp->vc_verbose > 1) {
+oclengine.c:		if (vcp->vc_verbose > 1)
+oclengine.c:		if (vcp->vc_verbose > 0) {
+oclengine.c:	if (vcp->vc_verbose > 1) {
+oclengine.c:		if (vcp->vc_verbose <= 1) {
+oclvanitygen.c:	vcp->vc_compressed = compressed;
+oclvanitygen.c:	vcp->vc_verbose = verbose;
+oclvanitygen.c:	vcp->vc_result_file = result_file;
+oclvanitygen.c:	vcp->vc_remove_on_match = remove_on_match;
+oclvanitygen.c:	vcp->vc_only_one = only_one;
+oclvanitygen.c:	vcp->vc_pubkeytype = addrtype;
+oclvanitygen.c:	vcp->vc_pubkey_base = pubkey_base;
+oclvanitygen.c:	vcp->vc_output_match = vg_output_match_console;
+oclvanitygen.c:	vcp->vc_output_timing = vg_output_timing_console;
+oclvanitygen.c:	if (!vcp->vc_npatterns) {
+oclvanitygen.c:	vcp->vc_key_protect_pass = key_password;
+oclvanitygen.c:	if ((verbose > 0) && regex && (vcp->vc_npatterns > 1))
+oclvanitygen.c:			"Regular expressions: %ld\n", vcp->vc_npatterns);
+oclvanityminer.c:	vcp->vc_halt = 1;
+oclvanityminer.c:	vcp->vc_verbose = verbose;
+oclvanityminer.c:	vcp->vc_output_match = output_match_work_complete;
+oclvanityminer.c:	vcp->vc_output_timing = vg_output_timing_console;
+oclvanityminer.c:			vcp->vc_pubkey_base = pkb->pubkey;
+oclvanityminer.c:				vcp->vc_addrtype = wip->addrtype;
+oclvanityminer.c:				assert(vcp->vc_npatterns);
+pattern.c:	if (vcp->vc_thread_excl++) {
+pattern.c:		for (tp = vcp->vc_threads; tp != NULL; tp = tp->vxc_next) {
+pattern.c:		for (tp = vcp->vc_threads; tp != NULL; tp = tp->vxc_next) {
+pattern.c:			for (tp = vcp->vc_threads;
+pattern.c:	vxcp->vxc_next = vcp->vc_threads;
+pattern.c:	vcp->vc_threads = vxcp;
+pattern.c:	for (tip = vcp->vc_timing_head, mytip = NULL;
+pattern.c:		mytip->ti_next = vcp->vc_timing_head;
+pattern.c:		vcp->vc_timing_head = mytip;
+pattern.c:	vcp->vc_timing_total += cycle;
+pattern.c:	if (vcp->vc_timing_prevfound != vcp->vc_found) {
+pattern.c:		vcp->vc_timing_prevfound = vcp->vc_found;
+pattern.c:		vcp->vc_timing_sincelast = 0;
+pattern.c:	vcp->vc_timing_sincelast += cycle;
+pattern.c:	if (mytip != vcp->vc_timing_head) {
+pattern.c:	total = vcp->vc_timing_total;
+pattern.c:	sincelast = vcp->vc_timing_sincelast;
+pattern.c:	vcp->vc_output_timing(vcp, sincelast, rate, total);
+pattern.c:	for (ptip = &vcp->vc_timing_head, tip = *ptip;
+pattern.c:	while (vcp->vc_timing_head != NULL) {
+pattern.c:		tp = vcp->vc_timing_head;
+pattern.c:		vcp->vc_timing_head = tp->ti_next;
+pattern.c:	if (vcp->vc_chance >= 1.0) {
+pattern.c:		prob = 1.0f - exp(-count/vcp->vc_chance);
+pattern.c:			time = ((-vcp->vc_chance * log(1.0 - targ)) - count) /
+pattern.c:	if (vcp->vc_found) {
+pattern.c:		if (vcp->vc_remove_on_match)
+pattern.c:				     vcp->vc_found, vcp->vc_npatterns_start);
+pattern.c:				     vcp->vc_found);
+pattern.c:	int isscript = (vcp->vc_format == VCF_SCRIPT);
+pattern.c:	if (vcp->vc_pubkey_base) {
+pattern.c:			     vcp->vc_pubkey_base,
+pattern.c:	if (vcp->vc_compressed)
+pattern.c:				  vcp->vc_pubkeytype, addr_buf);
+pattern.c:				  vcp->vc_pubkeytype, addr_buf);
+pattern.c:					 vcp->vc_addrtype, addr2_buf);
+pattern.c:	if (vcp->vc_key_protect_pass) {
+pattern.c:						pkey, vcp->vc_privtype,
+pattern.c:						vcp->vc_key_protect_pass);
+pattern.c:			vcp->vc_key_protect_pass = NULL;
+pattern.c:	if (!vcp->vc_key_protect_pass) {
+pattern.c:		if (vcp->vc_compressed)
+pattern.c:			vg_encode_privkey_compressed(pkey, vcp->vc_privtype, privkey_buf);
+pattern.c:			vg_encode_privkey(pkey, vcp->vc_privtype, privkey_buf);
+pattern.c:	if (!vcp->vc_result_file || (vcp->vc_verbose > 0)) {
+pattern.c:	if (vcp->vc_verbose > 0) {
+pattern.c:		if (vcp->vc_verbose > 1) {
+pattern.c:	if (!vcp->vc_result_file || (vcp->vc_verbose > 0)) {
+pattern.c:	if (vcp->vc_result_file) {
+pattern.c:		FILE *fp = fopen(vcp->vc_result_file, "a");
+pattern.c:	vcp->vc_free(vcp);
+pattern.c:	vcp->vc_pattern_generation++;
+pattern.c:	return vcp->vc_add_patterns(vcp, patterns, npatterns);
+pattern.c:	vcp->vc_clear_all_patterns(vcp);
+pattern.c:	vcp->vc_pattern_generation++;
+pattern.c:	if (!vcp->vc_hash160_sort)
+pattern.c:	return vcp->vc_hash160_sort(vcp, buf);
+pattern.c:	for (vxcp = vcp->vc_threads; vxcp != NULL; vxcp = vxcp->vxc_next) {
+pattern.c:	vcp->vc_halt = 1;
+pattern.c:	vcp->vc_halt = 0;
+pattern.c:	for (vxcp = vcp->vc_threads; vxcp != NULL; vxcp = vxcp->vxc_next) {
+pattern.c:		if (vcp->vc_verbose > 1) {
+vanitygen.c:	vg_test_func_t test_func = vcp->vc_test;
+vanitygen.c:	vxcp->vxc_binres[0] = vcp->vc_addrtype;
+vanitygen.c:	if (vcp->vc_format == VCF_SCRIPT) {
+vanitygen.c:		hash_len = (vcp->vc_compressed)?33:65;
+vanitygen.c:	while (!vcp->vc_halt) {
+vanitygen.c:			if (vcp->vc_pubkey_base)
+vanitygen.c:					     vcp->vc_pubkey_base,
+vanitygen.c:						 (vcp->vc_compressed)?POINT_CONVERSION_COMPRESSED:POINT_CONVERSION_UNCOMPRESSED,
+vanitygen.c:						 (vcp->vc_compressed)?33:65,
+vanitygen.c:	if (vcp->vc_verbose > 1) {
+vanitygen.c:	vcp->vc_compressed = compressed;
+vanitygen.c:	vcp->vc_verbose = verbose;
+vanitygen.c:	vcp->vc_result_file = result_file;
+vanitygen.c:	vcp->vc_remove_on_match = remove_on_match;
+vanitygen.c:	vcp->vc_only_one = only_one;
+vanitygen.c:	vcp->vc_format = format;
+vanitygen.c:	vcp->vc_pubkeytype = pubkeytype;
+vanitygen.c:	vcp->vc_pubkey_base = pubkey_base;
+vanitygen.c:	vcp->vc_output_match = vg_output_match_console;
+vanitygen.c:	vcp->vc_output_timing = vg_output_timing_console;
+vanitygen.c:	if (!vcp->vc_npatterns) {
+vanitygen.c:	vcp->vc_key_protect_pass = key_password;
+vanitygen.c:	if ((verbose > 0) && regex && (vcp->vc_npatterns > 1))
+vanitygen.c:			"Regular expressions: %ld\n", vcp->vc_npatterns);

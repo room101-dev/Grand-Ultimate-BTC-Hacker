@@ -1,0 +1,9 @@
+Loading Bloom File ../hex2blf/monster.blf
+bloom test=84
+BLOOM-TEST[prefix_init]: 1b35f12fcfb9d6e60c5383574127d77a743e37ce: 
+Cpu Bloom Check(1): VanitySearch v1.19
+Difficulty: 1461501637330902918203684832716283019655932542976
+Search: 1vZsufF729c8FaPXqjWqADGJMpKHGpGNa [Uncompressed, with public key]
+Start Sun Nov 29 17:05:09 2020
+Base Key: Randomly changed every 50 Mkeys
+Number of CPU thread: 2

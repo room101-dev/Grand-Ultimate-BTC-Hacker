@@ -1,0 +1,4 @@
+Linux distribution using the following commands under root (to become root in Ubuntu use "sudo -s“):
+
+# mkdir /tmp/ramdisk; chmod 777 /tmp/ramdisk
+# mount -t tmpfs -o size=256M tmpfs /tmp/ramdisk/
