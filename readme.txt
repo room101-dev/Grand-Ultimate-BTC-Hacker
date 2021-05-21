@@ -1,6 +1,6 @@
 
 blockparser
-Not really useful, but one simple way to get 300M hex addresses from the blockchain fairly quickly.
+Not really useful, but one simple way to get 300M hex addresses from the blockchain fairly quickly. Written in C fast.
 
 Brain-Flayer3
 
@@ -10,6 +10,10 @@ hex2blf
 
 This is a big deal, this is all the engine and glue to build 8gb bloom-filter and deploy, also the binchk to kick out false postives. 
 See make-bin.sh to see how to make bin file.
+
+all-block
+
+This is a first time use to collect all hex address from the blockchain full-node, if you don't already have the 300M hex h160 addresses then this is one one to do it, slow, but simple and easy to configure. You must have bitcoind running on your machine. Written python slow.
 
 new-block
 
