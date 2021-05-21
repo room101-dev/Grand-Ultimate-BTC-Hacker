@@ -2,6 +2,9 @@
 blockparser
 Not really useful, but one simple way to get 300M hex addresses from the blockchain fairly quickly.
 
+Brain-Flayer3
+
+A complete re-write of the original, now support up to 4gb bloom-filer, orginal only supported 512mb bloom ( or 15M btc addresses )
 
 hex2blf
 
@@ -35,3 +38,7 @@ readme.txt
 rich.hex
 A list of high value hex addresses so you can test your stuff and make you know you didn't break anything, like run this through blf8chk time to time and make sure your bloom
 sees the high-val addresses.
+
+loop2.sh
+
+This is the automated script to continously run your miner's who control the gpu cards, I like to reset every 20minutes and use another address template, reset the private key scan every 100M keys is a good-idea, and use a random seed so the random number generator never runs the same.
