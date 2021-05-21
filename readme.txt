@@ -1,3 +1,8 @@
+Note on all basis software, I have left the original name, but note all these programs have been completely re-written over the years, e.g. the vanity-search can no long search for vanity addresses that code is long gone.
+
+Same for brain-flayer, its been completely re-written and re-purposed.
+
+Hex2Blf as well is now hex2blf, hex2blf2, hex2blf4, hex2blf8; 8 of course means 8gb, there is also a chkblf8 to go with it, all is in the makefile.
 
 blockparser
 Not really useful, but one simple way to get 300M hex addresses from the blockchain fairly quickly. Written in C fast.
@@ -25,9 +30,11 @@ This is 3+ year old, its bloom-filter onboard the GPU its opencl, meaning  it wo
 
 vanity-search
 
-This is the new stuff CUDA only.
+This is the new stuff CUDA only. Note, compiling cuda is not easy, you need to know the -sm on your card, you need to be an expert; You break anything you fix it, nobody is going to help you 
 
 README.md
+
+Generic philosophy of hacking btc.
 
 get-bal-hex.py
 
