@@ -2,6 +2,7 @@
 
 Two parts here random key search of bitcoin, and ECDLP high-level math analysis to map public-keys to private.
 
+Here we are NOV 2022, and ETH has gone stake, and billions of GPU cards have NOTHING to do with their lives;
 
 **
 
